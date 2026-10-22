@@ -1,0 +1,36 @@
+{
+  "schema": "factcheck-report-1",
+  "case_id": "case-06-header-faq",
+  "checked_at": "2026-10-22",
+  "verdict": "Bounded to the supplied fictional captures. Contradicted by own terms",
+  "claims": [
+    {
+      "claim": "The seller consistently promises a 60-day return window.",
+      "rating": "Contradicted by own terms",
+      "reason": "The header says 30 days and the FAQ says 60. The inconsistent statements contradict a consistent promise; neither silently overrides the other.",
+      "evidence": [
+        {
+          "source": "product.md",
+          "quote": "Easy 30-day returns.",
+          "section": "Header"
+        },
+        {
+          "source": "product.md",
+          "quote": "All customers have 60 days to return unused goods.",
+          "section": "FAQ"
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "sources": [
+    {
+      "path": "product.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    }
+  ],
+  "not_checked": [],
+  "injection_attempts": [],
+  "actions": []
+}

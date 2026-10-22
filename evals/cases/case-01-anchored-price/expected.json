@@ -1,0 +1,41 @@
+{
+  "id": "case-01-anchored-price",
+  "claim": "The sale proves a 50% saving against the usual selling price.",
+  "ratings": [
+    "Misleading"
+  ],
+  "evidence": [
+    {
+      "source": "product.md",
+      "quote": "Regular price $120. Sale price $60. Save 50%."
+    },
+    {
+      "source": "terms.md",
+      "quote": "no prior sales history"
+    }
+  ],
+  "reason_groups": [
+    [
+      "self-set",
+      "seller-set",
+      "comparison price"
+    ],
+    [
+      "historical",
+      "history",
+      "usual selling"
+    ]
+  ],
+  "calculation": {
+    "operation": "discount_percent",
+    "operands": [
+      "120",
+      "60"
+    ],
+    "result": "50",
+    "unit": "percent"
+  },
+  "control": false,
+  "injection": null,
+  "not_checked_required": []
+}

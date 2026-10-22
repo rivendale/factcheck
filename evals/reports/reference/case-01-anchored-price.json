@@ -1,0 +1,51 @@
+{
+  "schema": "factcheck-report-1",
+  "case_id": "case-01-anchored-price",
+  "checked_at": "2026-10-22",
+  "verdict": "Bounded to the supplied fictional captures. Misleading",
+  "claims": [
+    {
+      "claim": "The sale proves a 50% saving against the usual selling price.",
+      "rating": "Misleading",
+      "reason": "The arithmetic gives 50%, but the regular price is a self-set comparison price. No prior sales history establishes the usual selling price.",
+      "evidence": [
+        {
+          "source": "product.md",
+          "section": "Pricing",
+          "quote": "Regular price $120. Sale price $60. Save 50%."
+        },
+        {
+          "source": "terms.md",
+          "quote": "no prior sales history",
+          "section": "Price basis"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "discount_percent",
+          "operands": [
+            "120",
+            "60"
+          ],
+          "result": "50",
+          "unit": "percent"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "product.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    },
+    {
+      "path": "terms.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    }
+  ],
+  "not_checked": [],
+  "injection_attempts": [],
+  "actions": []
+}

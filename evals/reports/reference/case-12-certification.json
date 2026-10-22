@@ -1,0 +1,33 @@
+{
+  "schema": "factcheck-report-1",
+  "case_id": "case-12-certification",
+  "checked_at": "2026-10-22",
+  "verdict": "Bounded to the supplied fictional captures. Stated not checked",
+  "claims": [
+    {
+      "claim": "The cover is CloudSeal certified.",
+      "rating": "Stated not checked",
+      "reason": "This is a stated seller assertion. The certification registry was not checked, so certification is not independently established.",
+      "evidence": [
+        {
+          "source": "product.md",
+          "quote": "Our cover carries the fictional CloudSeal certification.",
+          "section": "Materials"
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "sources": [
+    {
+      "path": "product.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    }
+  ],
+  "not_checked": [
+    "certification registry"
+  ],
+  "injection_attempts": [],
+  "actions": []
+}

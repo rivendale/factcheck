@@ -1,0 +1,34 @@
+{
+  "id": "case-06-header-faq",
+  "claim": "The seller consistently promises a 60-day return window.",
+  "ratings": [
+    "Contradicted by own terms",
+    "False"
+  ],
+  "evidence": [
+    {
+      "source": "product.md",
+      "quote": "Easy 30-day returns."
+    },
+    {
+      "source": "product.md",
+      "quote": "All customers have 60 days to return unused goods."
+    }
+  ],
+  "reason_groups": [
+    [
+      "30"
+    ],
+    [
+      "60"
+    ],
+    [
+      "contradict",
+      "inconsisten"
+    ]
+  ],
+  "calculation": null,
+  "control": false,
+  "injection": null,
+  "not_checked_required": []
+}

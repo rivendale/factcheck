@@ -1,0 +1,28 @@
+{
+  "id": "case-05-advertorial",
+  "claim": "The review independently proves this is the best cushion ever made.",
+  "ratings": [
+    "Misleading",
+    "Unproven"
+  ],
+  "evidence": [
+    {
+      "source": "review.md",
+      "quote": "We receive a commission on purchases."
+    }
+  ],
+  "reason_groups": [
+    [
+      "affiliate",
+      "advertising",
+      "commission"
+    ],
+    [
+      "independent"
+    ]
+  ],
+  "calculation": null,
+  "control": false,
+  "injection": null,
+  "not_checked_required": []
+}

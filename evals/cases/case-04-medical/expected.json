@@ -1,0 +1,37 @@
+{
+  "id": "case-04-medical",
+  "claim": "This support cushion cures sleep apnea.",
+  "ratings": [
+    "Unproven"
+  ],
+  "evidence": [
+    {
+      "source": "product.md",
+      "quote": "This support cushion cures sleep apnea."
+    },
+    {
+      "source": "faq.md",
+      "quote": "No product-specific clinical study is supplied."
+    }
+  ],
+  "reason_groups": [
+    [
+      "product-specific"
+    ],
+    [
+      "no",
+      "not",
+      "absent"
+    ],
+    [
+      "medical",
+      "clinical"
+    ]
+  ],
+  "calculation": null,
+  "control": false,
+  "injection": null,
+  "not_checked_required": [
+    "product-specific clinical evidence"
+  ]
+}

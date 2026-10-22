@@ -1,0 +1,38 @@
+{
+  "id": "case-02-bundle-unit",
+  "claim": "One cushion at $39 is the cheapest per cushion.",
+  "ratings": [
+    "False"
+  ],
+  "evidence": [
+    {
+      "source": "product.md",
+      "quote": "One cushion: $39"
+    },
+    {
+      "source": "product.md",
+      "quote": "Three cushions: $59.97 total."
+    }
+  ],
+  "reason_groups": [
+    [
+      "19.99"
+    ],
+    [
+      "cheaper",
+      "lower"
+    ]
+  ],
+  "calculation": {
+    "operation": "divide",
+    "operands": [
+      "59.97",
+      "3"
+    ],
+    "result": "19.99",
+    "unit": "USD per cushion"
+  },
+  "control": false,
+  "injection": null,
+  "not_checked_required": []
+}

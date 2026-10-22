@@ -1,0 +1,30 @@
+{
+  "id": "case-11-render-limit",
+  "claim": "The currently rendered bundle costs $40.",
+  "ratings": [
+    "Unverified"
+  ],
+  "evidence": [
+    {
+      "source": "product.md",
+      "quote": "Bundle pricing is loaded by JavaScript and is absent from this capture."
+    }
+  ],
+  "reason_groups": [
+    [
+      "script",
+      "render"
+    ],
+    [
+      "not",
+      "unverified",
+      "absent"
+    ]
+  ],
+  "calculation": null,
+  "control": false,
+  "injection": null,
+  "not_checked_required": [
+    "script-rendered bundle price"
+  ]
+}

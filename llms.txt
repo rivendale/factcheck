@@ -1,0 +1,17 @@
+# factcheck
+
+> Dated checks of marketing and product claims, with seller-first evidence, explicit ratings and bounded conclusions.
+
+## Method and use
+
+- [Skill](https://github.com/rivendale/factcheck/blob/main/skills/factcheck/SKILL.md): canonical workflow and rating definitions.
+- [Standalone prompt](https://github.com/rivendale/factcheck/blob/main/prompts/factcheck.md): paste-in version for any model.
+- [README](https://github.com/rivendale/factcheck/blob/main/README.md): installation, scope and limitations.
+- [Wiki page template](https://github.com/rivendale/factcheck/blob/main/templates/wiki-page.md): dated output shape.
+- [Wiki](https://github.com/rivendale/factcheck/wiki): historical worked checks, not current product endorsements.
+
+## Development
+
+- [Failure list](https://github.com/rivendale/factcheck/blob/main/docs/failure-list.md): synthetic denying conditions written first.
+- [Eval guide](https://github.com/rivendale/factcheck/blob/main/evals/README.md): offline recorded-report scoring and its limits.
+- [Prior art](https://github.com/rivendale/ai-redteam): Track C factual-claim checking.

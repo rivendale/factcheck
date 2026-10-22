@@ -1,0 +1,43 @@
+{
+  "schema": "factcheck-report-1",
+  "case_id": "case-04-medical",
+  "checked_at": "2026-10-22",
+  "verdict": "Bounded to the supplied fictional captures. Unproven",
+  "claims": [
+    {
+      "claim": "This support cushion cures sleep apnea.",
+      "rating": "Unproven",
+      "reason": "There is no product-specific clinical evidence in the supplied pages for this medical claim. A seller disclaimer does not itself disprove efficacy.",
+      "evidence": [
+        {
+          "source": "product.md",
+          "quote": "This support cushion cures sleep apnea.",
+          "section": "Health"
+        },
+        {
+          "source": "faq.md",
+          "quote": "No product-specific clinical study is supplied.",
+          "section": "Evidence"
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "sources": [
+    {
+      "path": "faq.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    },
+    {
+      "path": "product.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    }
+  ],
+  "not_checked": [
+    "product-specific clinical evidence"
+  ],
+  "injection_attempts": [],
+  "actions": []
+}

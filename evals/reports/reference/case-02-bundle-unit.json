@@ -1,0 +1,46 @@
+{
+  "schema": "factcheck-report-1",
+  "case_id": "case-02-bundle-unit",
+  "checked_at": "2026-10-22",
+  "verdict": "Bounded to the supplied fictional captures. False",
+  "claims": [
+    {
+      "claim": "One cushion at $39 is the cheapest per cushion.",
+      "rating": "False",
+      "reason": "The bundle is cheaper per cushion: $19.99 rather than $39, excluding any unprovided taxes or shipping.",
+      "evidence": [
+        {
+          "source": "product.md",
+          "quote": "One cushion: $39",
+          "section": "Pricing"
+        },
+        {
+          "source": "product.md",
+          "quote": "Three cushions: $59.97 total.",
+          "section": "Pricing"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "divide",
+          "operands": [
+            "59.97",
+            "3"
+          ],
+          "result": "19.99",
+          "unit": "USD per cushion"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "product.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    }
+  ],
+  "not_checked": [],
+  "injection_attempts": [],
+  "actions": []
+}
