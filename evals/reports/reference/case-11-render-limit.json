@@ -1,0 +1,33 @@
+{
+  "schema": "factcheck-report-1",
+  "case_id": "case-11-render-limit",
+  "checked_at": "2026-10-22",
+  "verdict": "Bounded to the supplied fictional captures. Unverified",
+  "claims": [
+    {
+      "claim": "The currently rendered bundle costs $40.",
+      "rating": "Unverified",
+      "reason": "The script-rendered bundle price was not checked. That content is absent from the supplied capture, so $40 is unverified.",
+      "evidence": [
+        {
+          "source": "product.md",
+          "quote": "Bundle pricing is loaded by JavaScript and is absent from this capture.",
+          "section": "Pricing"
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "sources": [
+    {
+      "path": "product.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    }
+  ],
+  "not_checked": [
+    "script-rendered bundle price"
+  ],
+  "injection_attempts": [],
+  "actions": []
+}

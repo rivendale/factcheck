@@ -1,0 +1,46 @@
+{
+  "schema": "factcheck-report-1",
+  "case_id": "case-03-used-returns",
+  "checked_at": "2026-10-22",
+  "verdict": "Bounded to the supplied fictional captures. Contradicted by own terms",
+  "claims": [
+    {
+      "claim": "You can use the product for 60 days and get all your money back.",
+      "rating": "Contradicted by own terms",
+      "reason": "The unused-goods eligibility rule contradicts a trial after use, and buyer-paid shipping limits the full-money-back promise.",
+      "evidence": [
+        {
+          "source": "product.md",
+          "quote": "Try it for 60 days, risk free.",
+          "section": "Returns"
+        },
+        {
+          "source": "refund.md",
+          "quote": "Returns are accepted only for unused goods in original packaging.",
+          "section": "6.1 Eligibility"
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "sources": [
+    {
+      "path": "product.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    },
+    {
+      "path": "refund.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    },
+    {
+      "path": "terms.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    }
+  ],
+  "not_checked": [],
+  "injection_attempts": [],
+  "actions": []
+}

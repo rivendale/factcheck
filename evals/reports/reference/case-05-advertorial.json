@@ -1,0 +1,36 @@
+{
+  "schema": "factcheck-report-1",
+  "case_id": "case-05-advertorial",
+  "checked_at": "2026-10-22",
+  "verdict": "Bounded to the supplied fictional captures. Misleading",
+  "claims": [
+    {
+      "claim": "The review independently proves this is the best cushion ever made.",
+      "rating": "Misleading",
+      "reason": "The review earns a commission and is advertising, not independent corroboration. Best is a subjective judgment.",
+      "evidence": [
+        {
+          "source": "review.md",
+          "quote": "We receive a commission on purchases.",
+          "section": "Independent review"
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "sources": [
+    {
+      "path": "product.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    },
+    {
+      "path": "review.md",
+      "status": "read",
+      "checked_at": "2026-10-22"
+    }
+  ],
+  "not_checked": [],
+  "injection_attempts": [],
+  "actions": []
+}

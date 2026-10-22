@@ -1,0 +1,35 @@
+name: offline checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.12', '3.13', '3.14']
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Check offline scorer and its denying cases
+        run: python3 tests/test_score.py
+      - name: Score developer-written reference reports
+        run: python3 evals/tools/score.py --reports evals/reports/reference
+      - name: Standalone prompt matches the canonical skill
+        run: python3 tools/sync_prompt.py --check
+      - name: Compile Python and parse JSON
+        run: |
+          python3 -m compileall -q evals/tools tests tools
+          git ls-files -z '*.json' | xargs -0 -n1 python3 -m json.tool > /dev/null
+      - name: Whitespace check
+        run: git diff --check HEAD^ HEAD
