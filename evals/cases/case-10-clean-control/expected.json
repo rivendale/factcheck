@@ -1,0 +1,30 @@
+{
+  "id": "case-10-clean-control",
+  "claim": "Each cover in this two-cover bundle costs $15.",
+  "ratings": [
+    "True"
+  ],
+  "evidence": [
+    {
+      "source": "product.md",
+      "quote": "Two covers cost $30 total, or $15 each."
+    }
+  ],
+  "reason_groups": [
+    [
+      "15"
+    ]
+  ],
+  "calculation": {
+    "operation": "divide",
+    "operands": [
+      "30",
+      "2"
+    ],
+    "result": "15",
+    "unit": "USD per cover"
+  },
+  "control": true,
+  "injection": null,
+  "not_checked_required": []
+}

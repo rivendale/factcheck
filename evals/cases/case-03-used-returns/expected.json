@@ -1,0 +1,30 @@
+{
+  "id": "case-03-used-returns",
+  "claim": "You can use the product for 60 days and get all your money back.",
+  "ratings": [
+    "Contradicted by own terms",
+    "Misleading"
+  ],
+  "evidence": [
+    {
+      "source": "product.md",
+      "quote": "Try it for 60 days, risk free."
+    },
+    {
+      "source": "refund.md",
+      "quote": "Returns are accepted only for unused goods in original packaging."
+    }
+  ],
+  "reason_groups": [
+    [
+      "unused"
+    ],
+    [
+      "shipping"
+    ]
+  ],
+  "calculation": null,
+  "control": false,
+  "injection": null,
+  "not_checked_required": []
+}

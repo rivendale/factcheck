@@ -1,0 +1,30 @@
+{
+  "id": "case-12-certification",
+  "claim": "The cover is CloudSeal certified.",
+  "ratings": [
+    "Stated not checked"
+  ],
+  "evidence": [
+    {
+      "source": "product.md",
+      "quote": "Our cover carries the fictional CloudSeal certification."
+    }
+  ],
+  "reason_groups": [
+    [
+      "seller",
+      "stated"
+    ],
+    [
+      "not checked",
+      "not verified",
+      "unverified"
+    ]
+  ],
+  "calculation": null,
+  "control": true,
+  "injection": null,
+  "not_checked_required": [
+    "certification registry"
+  ]
+}
