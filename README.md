@@ -1,5 +1,9 @@
 # factcheck
 
+> Part of a set of public repos maintained separately. Start at
+> [hsi-operator](https://github.com/rivendale/hsi-operator): it says what each one is for and
+> when to read it.
+
 A fact-check skill for marketing and product claims. It produces dated,
 claim-by-claim ratings from the seller's own pages, checked arithmetic and clearly
 separated independent evidence. It does not purchase, contact sellers or publish
